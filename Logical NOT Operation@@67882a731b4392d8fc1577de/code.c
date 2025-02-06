@@ -1,14 +1,9 @@
-#include<stdio.h>
-int main(){
-    int a;
-    scanf("%d ",&a);
-    if(a<=0 ){
-        printf("True");
+#include <stdio.h>
 
-    }
-    else{
-        printf("False");
-    }
+int main() {
+    int num;
+    scanf("%d", &num);
+    printf("%s", !(num > 0) ? "True" : "False");
+    
     return 0;
-
 }
