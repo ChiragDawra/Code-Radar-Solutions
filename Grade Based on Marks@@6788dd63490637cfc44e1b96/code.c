@@ -1,19 +1,24 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int num;
-    if (num>=90){
-        printf("A");
+    scanf("%d", &num); // Read user input
+
+    if (num >= 90) {
+        printf("A\n");
+    } 
+    else if (num >= 80) { // No need for `num < 90` because it is already checked
+        printf("B\n");
+    } 
+    else if (num >= 70) {
+        printf("C\n");
+    } 
+    else if (num >= 60) {
+        printf("D\n");
+    } 
+    else {
+        printf("F\n");
     }
-    else if( num >=80 && num<90){
-        printf("B");
-    }
-    else if(num>=70 && num<80){
-        printf("C");
-    }
-    else if(num >=60 && num<70){
-        printf("D");
-    }
-    else{
-        printf("F");
-    }
+
+    return 0; // Indicate successful execution
 }
