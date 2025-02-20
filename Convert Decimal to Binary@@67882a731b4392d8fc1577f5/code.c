@@ -1,26 +1,19 @@
 #include <stdio.h>
 
-void printBinary(int num) {
-    int mask = 1 << 31; 
-    int started = 0; 
-    
-    for (int i = 0; i < 32; i++) {
-        if (num & mask) {
-            started = 1;
-            printf("1");
-        } else if (started) {
-            printf("0");
-        }
-        mask >>= 1;
+void decimalToBinary(int n) {
+    int binary = 0, place = 1;
+    while (n > 0) {
+        int lastBit = n & 1; // Extract the last bit
+        binary += lastBit * place;
+        place *= 10;
+        n >>= 1; // Right shift to process next bit
     }
-    
-    if (!started) printf("0"); 
+    printf("%d\n", binary);
 }
 
 int main() {
-    int num;
-    scanf("%d", &num);
-    printBinary(num);
-    
+    int n;
+    scanf("%d", &n);
+    decimalToBinary(n);
     return 0;
 }
