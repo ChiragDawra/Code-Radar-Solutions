@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void checkDivisibility(int num) {
     if (num % 3 == 0 && num % 5 == 0) {
         printf("Divisible by both\n");
@@ -19,3 +21,4 @@ int main() {
     checkDivisibility(num);
     return 0;
 }
+
