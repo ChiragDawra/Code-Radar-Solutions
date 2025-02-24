@@ -7,7 +7,7 @@ void evaluateGrade(char grade) {
         case 'C': printf("Average\n"); break;
         case 'D': printf("Below Average\n"); break;
         case 'F': printf("Fail\n"); break;
-        default: printf("Invalid Grade\n");
+        default: printf("Invalid grade\n");
     }
 }
 
