@@ -2,9 +2,9 @@
 
 void checkRange(int num) {
     if (num >= 1 && num <= 100) {
-        printf("In range\n");
+        printf("In Range\n");
     } else {
-        printf("Out of range\n");
+        printf("Out of Range\n");
     }
 }
 
